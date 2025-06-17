@@ -5,6 +5,10 @@ public class Main {
         account.setBalance(1000);
         System.out.println("Account Number: " + account.getAccountNumber());
         System.out.println("Balance: " + account.getBalance());
+
+        Shape circle = new Circle(5.0);
+        circle.displayShapeType();
+        System.out.println("Area of Circle: " + circle.area());
     }
 }
 
