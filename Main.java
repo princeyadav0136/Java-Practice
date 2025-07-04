@@ -24,6 +24,11 @@ public class Main {
         dog.makeSound(); // Outputs: Woof! Woof!
         dog.eat(); // Outputs: This animal is eating.
 
+        //Static Nested Class Example
+        Outer.StaticNested nestedClass = new Outer.StaticNested();
+        nestedClass.display();
+
+
     }
 }
 
