@@ -36,6 +36,18 @@ public class Main {
         // Local Inner Class Example
         Outer localOuter = new Outer();
         localOuter.display();
+
+        // Generic Class Example
+        Box<String> stringBox = new Box<>();
+        stringBox.setValue("Hello, Generics!");
+        System.out.println("String Box Value: " + stringBox.getValue());
+        Box<Integer> integerBox = new Box<>();
+        integerBox.setValue(123);
+        System.out.println("Integer Box Value: " + integerBox.getValue());
+
+        // Generic Pair Example
+        Pair<String, Integer> pair = new Pair<>("Age", 30);
+        System.out.println("Pair Key: " + pair.getKey() + ", Value: " + pair.getValue());
     }
 }
 
