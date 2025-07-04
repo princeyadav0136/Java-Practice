@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        System.out.println("✅ JDK, JRE, JVM are working perfectly!");
         BankAccount account = new BankAccount();
         account.setAccountNumber(123456);
         account.setBalance(1000);
@@ -22,6 +23,8 @@ public class Main {
 
         Animal a = new Dog();  // Upcasting
         a.makeSound(); 
+
+        System.out.println(MathUtil.square(5));  // Static method call
     }
 }
 
