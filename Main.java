@@ -68,6 +68,11 @@ public class Main {
 
         singletonInstance.doSomething();
         System.out.println("Are both instances the same? " + (singletonInstance == anotherInstance));
+
+        // Immutable Class Example
+        Student student = new Student("John Doe", 20);
+        System.out.println("Student Name: " + student.getName());
+        System.out.println("Student Age: " + student.getAge());
     }
 }
 
