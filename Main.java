@@ -40,6 +40,8 @@ public class Main {
 
         Employee employee = new Employee();
         System.out.println("Employee Details: " + employee.getEmployeeInfo());
+
+        Database.getInstance();
     }
 }
 
