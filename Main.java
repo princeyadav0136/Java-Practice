@@ -61,6 +61,13 @@ public class Main {
         for (OrderStatus status : allStatuses) {
             System.out.println(status + " - " + status.ordinal());
         }
+
+        // Singleton Example
+        MySingleton singletonInstance = MySingleton.getInstance();
+        MySingleton anotherInstance = MySingleton.getInstance();
+
+        singletonInstance.doSomething();
+        System.out.println("Are both instances the same? " + (singletonInstance == anotherInstance));
     }
 }
 
