@@ -32,6 +32,10 @@ public class Main {
         Outer outer = new Outer();
         Outer.Inner innerClass = outer.new Inner();
         innerClass.display();
+
+        // Local Inner Class Example
+        Outer localOuter = new Outer();
+        localOuter.display();
     }
 }
 
