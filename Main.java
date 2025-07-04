@@ -28,7 +28,10 @@ public class Main {
         Outer.StaticNested nestedClass = new Outer.StaticNested();
         nestedClass.display();
 
-
+        // Non-Static Inner Class Example
+        Outer outer = new Outer();
+        Outer.Inner innerClass = outer.new Inner();
+        innerClass.display();
     }
 }
 
