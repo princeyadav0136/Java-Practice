@@ -28,6 +28,8 @@ public class Main {
 
         Greeter greeter = new Greeter();
         greeter.greet("Prince"); // Non static method call
+
+        System.out.println("Subtract " + calc.subtract(10, 5)); // User-defined method call
     }
 }
 
