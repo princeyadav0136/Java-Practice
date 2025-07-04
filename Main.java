@@ -48,6 +48,19 @@ public class Main {
         // Generic Pair Example
         Pair<String, Integer> pair = new Pair<>("Age", 30);
         System.out.println("Pair Key: " + pair.getKey() + ", Value: " + pair.getValue());
+
+        // Enum Example
+        Directions direction = Directions.NORTH;
+        System.out.println("Direction: " + direction);
+
+        OrderStatus orderStatus = OrderStatus.SHIPPED;
+        System.out.println("Order Status: " + orderStatus);
+
+        OrderStatus[] allStatuses = OrderStatus.values();
+        System.out.println("All Order Statuses:");
+        for (OrderStatus status : allStatuses) {
+            System.out.println(status + " - " + status.ordinal());
+        }
     }
 }
 
