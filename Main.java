@@ -19,6 +19,11 @@ public class Main {
         double quotient = calculator.divide(20, 4);
         System.out.println("Quotient: " + quotient);
 
+        // Abstract Class Example
+        Animal dog = new Dog();
+        dog.makeSound(); // Outputs: Woof! Woof!
+        dog.eat(); // Outputs: This animal is eating.
+
     }
 }
 
