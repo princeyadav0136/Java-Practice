@@ -34,6 +34,9 @@ public class Main {
         Book book = new Book();
         Student student = new Student("Prince", 20);
         System.out.println("Student Details:" + student.getStudentInfo());
+
+        Student student2 = new Student("John", 22, "A");
+        System.out.println("Student Details: " + student2.getStudentInfo());
     }
 }
 
