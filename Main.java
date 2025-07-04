@@ -25,6 +25,9 @@ public class Main {
         a.makeSound(); 
 
         System.out.println(MathUtil.square(5));  // Static method call
+
+        Greeter greeter = new Greeter();
+        greeter.greet("Prince"); // Non static method call
     }
 }
 
