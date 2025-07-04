@@ -17,9 +17,9 @@ public class Main {
         myCar.stop();
 
         Calculator calc = new Calculator();
-        System.out.println("Sum (int, int): " + calc.add(2, 3));
-        System.out.println("Sum (double, double): " + calc.add(2.5, 4.2));
-        System.out.println("Sum (int, int, int): " + calc.add(1, 2, 3));
+        System.out.println("Sum (int, int): " + calc.add(2, 3)); // Method Overloading
+        System.out.println("Sum (double, double): " + calc.add(2.5, 4.2)); // Method Overloading
+        System.out.println("Sum (int, int, int): " + calc.add(1, 2, 3)); // Method Overloading
 
         Animal a = new Dog();  // Upcasting
         a.makeSound(); 
