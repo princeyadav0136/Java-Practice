@@ -32,6 +32,8 @@ public class Main {
         System.out.println("Subtract " + calc.subtract(10, 5)); // User-defined method call
 
         Book book = new Book();
+        Student student = new Student("Prince", 20);
+        System.out.println("Student Details:" + student.getStudentInfo());
     }
 }
 
