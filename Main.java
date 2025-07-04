@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Balance: " + account.getBalance());
 
         Shape circle = new Circle(5.0);
-        circle.displayShapeType();
+        circle.displayShapeType(); // Abstract method implementation
         System.out.println("Area of Circle: " + circle.area());
 
         Car myCar = new Car();
