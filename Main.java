@@ -73,6 +73,12 @@ public class Main {
         Student student = new Student("John Doe", 20);
         System.out.println("Student Name: " + student.getName());
         System.out.println("Student Age: " + student.getAge());
+
+        // Wrapper Class Example
+        Integer wrappedInteger = Integer.valueOf(42);
+        System.out.println("Wrapped Integer: " + wrappedInteger);
+        Double wrappedDouble = Double.valueOf(3.14);
+        System.out.println("Wrapped Double: " + wrappedDouble);
     }
 }
 
