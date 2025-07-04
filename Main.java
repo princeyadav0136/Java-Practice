@@ -37,6 +37,9 @@ public class Main {
 
         Student student2 = new Student("John", 22, "A");
         System.out.println("Student Details: " + student2.getStudentInfo());
+
+        Employee employee = new Employee();
+        System.out.println("Employee Details: " + employee.getEmployeeInfo());
     }
 }
 
