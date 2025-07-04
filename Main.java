@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Sum (int, int, int): " + calc.add(1, 2, 3)); // Method Overloading
 
         Animal a = new Dog();  // Upcasting
-        a.makeSound(); 
+        a.makeSound(); // Overridden method call
 
         System.out.println(MathUtil.square(5));  // Static method call
 
