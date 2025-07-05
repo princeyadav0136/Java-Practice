@@ -84,6 +84,10 @@ public class Main {
         Vehicle car = new Car();
         car.startEngine();
         car.stopEngine();
+
+        // Nested Interface Example
+        IntefaceOuter.InnerInterface innerInterface = new InnerImpl();
+        innerInterface.innerMethod();
     }
 }
 
