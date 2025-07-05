@@ -79,6 +79,11 @@ public class Main {
         System.out.println("Wrapped Integer: " + wrappedInteger);
         Double wrappedDouble = Double.valueOf(3.14);
         System.out.println("Wrapped Double: " + wrappedDouble);
+
+        //Interface Example
+        Vehicle car = new Car();
+        car.startEngine();
+        car.stopEngine();
     }
 }
 
