@@ -88,6 +88,12 @@ public class Main {
         // Nested Interface Example
         IntefaceOuter.InnerInterface innerInterface = new InnerImpl();
         innerInterface.innerMethod();
+
+        // Java 8 Interface with Default and Static Method Example
+        MobileService mobileService = new Jio();
+        mobileService.call();
+        mobileService.checkBalance();
+        MobileService.sendSMS();
     }
 }
 
