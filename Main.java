@@ -99,6 +99,10 @@ public class Main {
         BankService bankService = new SBI();
         bankService.withdraw();
         BankService.deposit();
+
+        // Lambda Expression Example
+        MessagePrinter messagePrinter = (message) -> System.out.println("Message: " + message.toUpperCase());
+        messagePrinter.printMessage("Hello, Lambda!");
     }
 }
 
