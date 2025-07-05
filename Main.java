@@ -94,6 +94,11 @@ public class Main {
         mobileService.call();
         mobileService.checkBalance();
         MobileService.sendSMS();
+
+        // Java 9 Interface with Private Method Example
+        BankService bankService = new SBI();
+        bankService.withdraw();
+        BankService.deposit();
     }
 }
 
