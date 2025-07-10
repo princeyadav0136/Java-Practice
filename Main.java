@@ -2,11 +2,11 @@ public class Main {
     public static void main(String[] args) {
 
         //POJO Example
-        Book book1 = new Book();
-        book1.setTitle("1984");
-        book1.setAuthor("George Orwell");
-        System.out.println("Title: " + book1.getTitle());
-        System.out.println("Author: " + book1.getAuthor());
+        // Book book1 = new Book();
+        // book1.setTitle("1984");
+        // book1.setAuthor("George Orwell");
+        // System.out.println("Title: " + book1.getTitle());
+        // System.out.println("Author: " + book1.getAuthor());
 
         // Concrete Class Example
         Calculator calculator = new Calculator();
@@ -103,6 +103,15 @@ public class Main {
         // Lambda Expression Example
         MessagePrinter messagePrinter = (message) -> System.out.println("Message: " + message.toUpperCase());
         messagePrinter.printMessage("Hello, Lambda!");
+
+        // Custom Annotation Example
+        Class<Book> obj = Book.class;
+
+        if (obj.isAnnotationPresent(Info.class)) {
+            Info info = obj.getAnnotation(Info.class);
+            System.out.println("Author: " + info.author());
+            System.out.println("Version: " + info.version());
+        }
     }
 }
 
