@@ -321,6 +321,24 @@ public class Main {
         while (!maxPQ.isEmpty()) {
             System.out.println(maxPQ.poll());
         }
+
+        // Comparable Example
+        List<Student> students = new ArrayList<>();
+        students.add(new Student("Alice", 22));
+        students.add(new Student("Bob", 20));
+        students.add(new Student("Charlie", 21));
+        students.sort((s1, s2) -> Integer.compare(s1.getAge(), s2.getAge()));
+        System.out.println("Sorted Students by Age:");
+        for (Student student1 : students) {
+            System.out.println(student1.getName() + " - Age: " + student1.getAge());
+        }
+
+        // Comparator Example
+        students.sort((s1, s2) -> s1.getName().compareTo(s2.getName()));
+        System.out.println("Sorted Students by Name:");
+        for (Student student1 : students) {
+            System.out.println(student1.getName() + " - Age: " + student1.getAge());
+        }
     }
 }
 
