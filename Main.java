@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class Main {
 
@@ -302,7 +303,24 @@ public class Main {
             System.out.println(name);
         }
 
+        // Priority Queue Example
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+        priorityQueue.add(5);
+        priorityQueue.add(1);
+        priorityQueue.add(3);
+        System.out.println("Priority Queue Elements:");
+        while (!priorityQueue.isEmpty()) {
+            System.out.println(priorityQueue.poll());
+        }
 
+        PriorityQueue<Integer> maxPQ = new PriorityQueue<>((Integer k, Integer l) -> l-k);
+        maxPQ.add(1);
+        maxPQ.add(2);
+        maxPQ.add(3);
+        System.out.println("Max Priority Queue Elements:");
+        while (!maxPQ.isEmpty()) {
+            System.out.println(maxPQ.poll());
+        }
     }
 }
 
