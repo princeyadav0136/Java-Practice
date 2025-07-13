@@ -1,4 +1,13 @@
 public class Main {
+
+    static void checkPin(int pin) throws InvalidPinExceptions {
+        if (pin != 1234) {
+            throw new InvalidPinExceptions("Invalid PIN entered.");
+        } else {
+            System.out.println("PIN is valid.");
+        }
+    }
+        
     public static void main(String[] args) {
 
         //POJO Example
@@ -111,6 +120,22 @@ public class Main {
             Info info = obj.getAnnotation(Info.class);
             System.out.println("Author: " + info.author());
             System.out.println("Version: " + info.version());
+        }
+
+        try{
+            int result = 10 / 0; // This will throw an ArithmeticException
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Caught an exception: " + e.getMessage());
+        } finally {
+            System.out.println("This block always executes, regardless of an exception.");
+        }
+
+        try {
+            checkPin(1235);
+        }
+        catch (InvalidPinExceptions e) {
+            System.out.println("Caught an exception: " + e.getMessage());
         }
     }
 }
