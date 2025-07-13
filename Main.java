@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     static void checkPin(int pin) throws InvalidPinExceptions {
@@ -289,7 +292,17 @@ public class Main {
             System.out.println("Fruit: " + fruit);
         }
 
-        
+        // Java Collection Framework Example
+        List<String> names = new ArrayList<>();
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+        System.out.println("Names in the list:");
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+
     }
 }
 
