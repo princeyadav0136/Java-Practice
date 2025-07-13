@@ -137,6 +137,89 @@ public class Main {
         catch (InvalidPinExceptions e) {
             System.out.println("Caught an exception: " + e.getMessage());
         }
+
+        // Operators in Java
+        System.out.println("Arithmetic Operators:");
+        System.out.println("Addition: " + (5 + 3));
+        System.out.println("Subtraction: " + (5 - 3));
+        System.out.println("Multiplication: " + (5 * 3));
+        System.out.println("Division: " + (5 / 3));
+        System.out.println("Modulus: " + (5 % 3));
+        
+        System.out.println("Relational Operators:");
+        System.out.println("Equal to: " + (5 == 3));
+        System.out.println("Not equal to: " + (5 != 3));
+        System.out.println("Greater than: " + (5 > 3));
+        System.out.println("Less than: " + (5 < 3));
+        System.out.println("Greater than or equal to: " + (5 >= 3));
+        System.out.println("Less than or equal to: " + (5 <= 3));
+
+        System.out.println("Logical Operators:");
+        System.out.println("AND: " + (true && false));
+        System.out.println("OR: " + (true || false));
+        System.out.println("NOT: " + !true);
+
+        System.out.println("Bitwise Operators:");
+        System.out.println("Bitwise AND: " + (5 & 3));
+        System.out.println("Bitwise OR: " + (5 | 3));
+        System.out.println("Bitwise XOR: " + (5 ^ 3));
+        System.out.println("Bitwise Complement: " + (~5));
+        System.out.println("Left Shift: " + (5 << 1));
+        System.out.println("Right Shift: " + (5 >> 1));
+
+        System.out.println("Assignment Operators:");
+        int a = 5;
+        System.out.println("Initial value of a: " + a);
+        a += 3; // a = a + 3
+        System.out.println("After += 3, a: " + a);
+        a -= 2; // a = a - 2
+        System.out.println("After -= 2, a: " + a);
+        a *= 2; // a = a * 2
+        System.out.println("After *= 2, a: " + a);
+        a /= 4; // a = a / 4
+        System.out.println("After /= 4, a: " + a);
+        a %= 3; // a = a % 3
+        System.out.println("After %= 3, a: " + a);
+        
+        System.out.println("Unary Operators:");
+        int b = 5;
+        System.out.println("Initial value of b: " + b);
+        System.out.println("Post-increment: " + (b++));
+        System.out.println("After post-increment, b: " + b);
+        System.out.println("Pre-increment: " + (++b));
+        System.out.println("After pre-increment, b: " + b);
+        System.out.println("Post-decrement: " + (b--));
+        System.out.println("After post-decrement, b: " + b);
+        System.out.println("Pre-decrement: " + (--b));
+        System.out.println("After pre-decrement, b: " + b);
+        System.out.println("Unary plus: " + (+b));
+        System.out.println("Unary minus: " + (-b));
+
+        System.out.println("Ternary Operator:");
+        int x = 10, y = 20;
+        int max = (x > y) ? x : y;
+        System.out.println("Maximum of x and y: " + max);
+
+        System.out.println("Instanceof Operator:");
+        String str = "Hello";
+        if (str instanceof String) {
+            System.out.println("str is an instance of String");
+        } else {
+            System.out.println("str is not an instance of String");
+        }
+
+        System.out.println("Bitwise AND of 1 and 1: ");
+        // This will print 1 because 1 & 1 is 1 in binary
+        // Bitwise AND operation
+        // 1 in binary is 0001
+        // 1 in binary is 0001
+        // 0001 & 0001 = 0001 (which is 1 in
+        // decimal)
+        // This is a simple example of using the bitwise AND operator
+        // in Java.
+        // It demonstrates how the bitwise AND operator works with two integers.
+        // The output will be 1, as both bits are 1.
+        System.out.println(1 & 1); 
     }
 }
 
