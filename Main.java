@@ -220,6 +220,76 @@ public class Main {
         // It demonstrates how the bitwise AND operator works with two integers.
         // The output will be 1, as both bits are 1.
         System.out.println(1 & 1); 
+
+
+        // Control Flow Example
+        int number = 10;
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else if (number < 0) {
+            System.out.println("The number is negative.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+
+        // Switch Case Example
+        String day = "Monday";
+        switch (day) {
+            case "Monday":
+                System.out.println("It's Monday, start of the week!");
+                break;
+            case "Tuesday":
+                System.out.println("It's Tuesday, keep going!");
+                break;
+            case "Wednesday":       
+                System.out.println("It's Wednesday, halfway through!");
+                break;
+            case "Thursday":
+                System.out.println("It's Thursday, almost there!");
+                break;
+            case "Friday":
+                System.out.println("It's Friday, weekend is near!");
+                break;
+            case "Saturday":
+                System.out.println("It's Saturday, enjoy your day!");
+                break;
+            case "Sunday":
+                System.out.println("It's Sunday, relax and prepare for the week ahead!");
+                break;
+            default:
+                System.out.println("Invalid day!");
+        }
+
+        // For Loop Example
+        System.out.println("For Loop Example:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Iteration: " + i);
+        }
+
+        // While Loop Example
+        System.out.println("While Loop Example:");
+        int count = 1;
+        while (count <= 5) {
+            System.out.println("Count: " + count);
+            count++;
+        }
+
+        // Do-While Loop Example
+        System.out.println("Do-While Loop Example:");
+        int doCount = 1;
+        do {
+            System.out.println("Do Count: " + doCount);
+            doCount++;
+        } while (doCount <= 5);
+
+        // Enhanced For Loop Example
+        System.out.println("Enhanced For Loop Example:");
+        String[] fruits = {"Apple", "Banana", "Cherry"};
+        for (String fruit : fruits) {
+            System.out.println("Fruit: " + fruit);
+        }
+
+        
     }
 }
 
