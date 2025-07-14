@@ -1,6 +1,7 @@
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
 
@@ -369,7 +370,24 @@ public class Main {
         arrayList.clear();
         System.out.println("ArrayList after clearing: " + arrayList);
         System.out.println("Is ArrayList empty after clearing? " + arrayList.isEmpty());
-        
+
+        // LinkedList Example
+        List<String> linkedList = new LinkedList<>();
+        linkedList.add("Dog");
+        linkedList.add("Cat");
+        linkedList.add("Rabbit");
+        System.out.println(linkedList);
+        System.out.println("Element at index 1: " + linkedList.get(1));
+        System.out.println("Size of LinkedList: " + linkedList.size());
+        System.out.println("Removing element at index 0: " + linkedList.remove(0));
+        System.out.println("LinkedList after removal: " + linkedList);
+        System.out.println("Is LinkedList empty? " + linkedList.isEmpty());
+        System.out.println("Index of 'Cat': " + linkedList.indexOf("Cat"));
+        System.out.println("Last index of 'Cat': " + linkedList.lastIndexOf("Cat"));
+        System.out.println("Contains 'Rabbit'? " + linkedList.contains("Rabbit"));
+        System.out.println("Clearing LinkedList...");
+        linkedList.clear();
+        System.out.println("LinkedList after clearing: " + linkedList);
     }
 }
 
