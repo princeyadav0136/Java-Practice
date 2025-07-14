@@ -1,4 +1,6 @@
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 import java.util.PriorityQueue;
 
@@ -339,6 +341,15 @@ public class Main {
         for (Student student1 : students) {
             System.out.println(student1.getName() + " - Age: " + student1.getAge());
         }
+
+        // Deque Example
+        Deque<String> deque = new ArrayDeque<>();
+        deque.add("A");
+        deque.addFirst("B");
+        deque.addLast("C");
+        System.out.println(deque);
+        System.out.println("removing first element: " + deque.removeFirst());
+        System.out.println("removing last element: " + deque.removeLast());
     }
 }
 
