@@ -388,6 +388,23 @@ public class Main {
         System.out.println("Clearing LinkedList...");
         linkedList.clear();
         System.out.println("LinkedList after clearing: " + linkedList);
+
+        // Vector Example
+        List<String> vector = new ArrayList<>();
+        vector.add("Red");
+        vector.add("Green");
+        vector.add("Blue");
+        System.out.println(vector);
+
+        // Stack Example
+        Deque<String> stack = new ArrayDeque<>();
+        stack.push("First");
+        stack.push("Second");
+        stack.push("Third");
+        System.out.println("Stack Elements: " + stack);
+        System.out.println("Popping from stack: " + stack.pop());
+        System.out.println("Stack after popping: " + stack);
+        System.out.println("Peek at top element: " + stack.peek());
     }
 }
 
