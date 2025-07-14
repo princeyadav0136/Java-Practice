@@ -350,6 +350,26 @@ public class Main {
         System.out.println(deque);
         System.out.println("removing first element: " + deque.removeFirst());
         System.out.println("removing last element: " + deque.removeLast());
+
+        // ArrayList Example
+        List<String> arrayList = new ArrayList<>();
+        arrayList.add("Apple");
+        arrayList.add("Banana");
+        arrayList.add("Cherry");
+        System.out.println(arrayList);
+        System.out.println("Element at index 1: " + arrayList.get(1));
+        System.out.println("Size of ArrayList: " + arrayList.size());
+        System.out.println("Removing element at index 0: " + arrayList.remove(0));
+        System.out.println("ArrayList after removal: " + arrayList);
+        System.out.println("Is ArrayList empty? " + arrayList.isEmpty());
+        System.out.println("Index of 'Banana': " + arrayList.indexOf("Banana"));
+        System.out.println("Last index of 'Banana': " + arrayList.lastIndexOf("Banana"));
+        System.out.println("Contains 'Cherry'? " + arrayList.contains("Cherry"));
+        System.out.println("Clearing ArrayList...");
+        arrayList.clear();
+        System.out.println("ArrayList after clearing: " + arrayList);
+        System.out.println("Is ArrayList empty after clearing? " + arrayList.isEmpty());
+        
     }
 }
 
