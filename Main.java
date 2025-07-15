@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.TreeMap;
 
 public class Main {
 
@@ -409,7 +410,7 @@ public class Main {
         System.out.println("Stack after popping: " + stack);
         System.out.println("Peek at top element: " + stack.peek());
 
-        // HashMap Example
+        // LinkedListHashMap Example
         Map<String, Integer> hashMap = new LinkedHashMap<>();
         hashMap.put("Alice", 25);
         hashMap.put("Bob", 30);
@@ -417,6 +418,27 @@ public class Main {
         for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
             System.out.println(entry.getKey() + " - " + entry.getValue());
         }
+
+        // HashMap Example
+        Map<String, Integer> map = new HashMap<>();
+        map.put("One", 1);
+        map.put("Two", 2);
+        map.put("Three", 3);
+        System.out.println("HashMap Elements:");
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " - " + entry.getValue());  
+        }
+
+        // TreeMap Example
+        Map<String, Integer> treeMap = new TreeMap<>();
+        treeMap.put("Apple", 1);
+        treeMap.put("Banana", 2);
+        treeMap.put("Cherry", 3);
+        System.out.println("TreeMap Elements:");
+        for (Map.Entry<String, Integer> entry : treeMap.entrySet()) {
+            System.out.println(entry.getKey() + " - " + entry.getValue());
+        }
+        
 
     }
 }
