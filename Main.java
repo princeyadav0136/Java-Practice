@@ -1,8 +1,11 @@
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.PriorityQueue;
 
 public class Main {
@@ -405,6 +408,16 @@ public class Main {
         System.out.println("Popping from stack: " + stack.pop());
         System.out.println("Stack after popping: " + stack);
         System.out.println("Peek at top element: " + stack.peek());
+
+        // HashMap Example
+        Map<String, Integer> hashMap = new LinkedHashMap<>();
+        hashMap.put("Alice", 25);
+        hashMap.put("Bob", 30);
+        System.out.println("HashMap Elements:");
+        for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey() + " - " + entry.getValue());
+        }
+
     }
 }
 
